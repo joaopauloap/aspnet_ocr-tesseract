@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Projeto de teste do OCR</h1>
+
+    <form asp-action="CarregarAnexo" enctype="multipart/form-data">
+        <input type="file" name="anexo" />
+        <button type="submit">Enviar</button>
+    </form>
+
+    <div class="mt-4">
+        <textarea rows="10" cols="100">@TempData["text"]</textarea>
+    </div>
+</div>
